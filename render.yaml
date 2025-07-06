@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: cp-extractor-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main_render.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+      - key: api_id
+        value: "22727464"
+      - key: api_hash
+        value: "f0e595a263c89aa17f6571b8af296ced"
+      - key: bot_token
+        value: "7110231022:AAHzjuE3MR7FdUvdFnaEHKurmQ9526aTIiM"
+      - key: auth_users
+        value: "[887699812]"  # Replace with your Telegram ID
+        
