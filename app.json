@@ -1,28 +1,17 @@
-
 {
-    "name": "Allinonebot",
-    "description": "ALLINONEBOT",
-    "repository": "https://github.com/",
+    "name": "Master-Extractor",
+    "description": "Master Extractor Bot for Telegram, built with Pyrogram.",
     "keywords": [
-        "telegram bot",
-        "pyrogram"
+        "pyrogram",
+        "docker"
     ],
-    "env": {
-            "API_ID": {
-            "description": "Your API_ID from https://my.telegram.org/apps",
-            "value": "22727464",
-            "required": true
-        },
-        "API_HASH": {
-            "description": "Your API_HASH from https://my.telegram.org/apps",       
-            "value": "f0e595a263c89aa17f6571b8af296ced",
-            "required": true
-        },
-        "BOT_TOKEN": {
-            "description": "Your Bot token from @Botfather",
-            "value": "7110231022:AAHzjuE3MR7FdUvdFnaEHKurmQ9526aTIiM",
-            "required": true
+    "stack": "container",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "standard-2x"
         }
-    }
-
+    },
+    "addons": [],
+    "buildpacks": []
 }

@@ -1,49 +1,40 @@
-# All_In_One BOT
+## Txt Extractor Bot
 
-## BATCH EXTRACTOR AND DOWNLOADER
+This is a Telegram bot that extracts URLs from text files. It supports a variety of apps and can be used to extract URLs from APKs.
 
+## How to Deploy
 
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/cryptostark/All_In_One/tree/main)
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://telegram.dog/starky0)
+1. **Configure config.py**
+   - Replace all placeholder values in `config.py` with your actual data:
+   - `BOT_TOKEN`: Get from [@BotFather](https://t.me/BotFather)
+   - `API_ID` and `API_HASH`: Get from [my.telegram.org](https://my.telegram.org)
+   - `ADMIN`: Add your Telegram user IDs (comma-separated)
+   - `DB_URL`: Your MongoDB connection string
+   - `DB_NAME`: Your database name
+   - Set up your channel IDs for:
+     - `TXT_LOG`
+     - `AUTH_LOG`
+     - `HIT_LOG`
+     - `DRM_DUMP`
+     - `CHANNEL`
+   - `CH_URL`: Your channel's invite link
+   - `OWNER`: Your Telegram profile link
+   - `THUMB_URL`: URL for bot thumbnail image
 
-## How to Deploy? 🤔
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/makwanaram/extractcp)
-- 👆 Press the deploy button.
+2. **Update msg.py**
+   - Find and replace the default username with your Telegram username
+   - Customize any message texts if needed
 
-- Go to  [my.telegram.org](https://my.telegram.org/)
-     - And get your API ID
-     - And API Hashes
+3. **Deploy to Heroku**
+   - Click the deploy button below
+   - Fill in the environment variables if prompted
+   - Wait for the build to complete
 
-- Get the Bot Father Token from [@BotFather](https://telegram.dog/botfather)
+## Deploy To Heroku
 
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/&template=https://github.com/Jitu1357/Extractor-V3)
 
-
-
-## How to reach Me ?
-<a href="https://telegram.dog/starky0"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="https://telegram.dog/starkbotss"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-
-## COMMANDS
-### AVAILABLE COMMANDS 
-```
-start - check whether bot is alive 
-pw - For Physics Wallah..
-e1 - For E1 Coaching App..
-vidya - For Vidya Bihar App..
-ocean - For Ocean Gurukul App..
-winners - For The Winners Institute.
-rgvikramjeet - For Rgvikramjeet App..
-txt - Rojgar with ankit
-cp - For classplus app
-cw - For careerwill app..
-exampur - For exampur app..
-khan - Khan Gs app..
-down - For Downloading Url lists
-forward - To Forward from One 
-restart - To restart the bot
-```
-
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
-## License
-[![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/cryptostark/All_In_One/blob/main/LICENCE)
+## Note
+- Make sure all your channels and groups are created before deployment and bot made admin in all the channels
+- Keep your API credentials and tokens secure
+- Test the bot locally before deploying to production
